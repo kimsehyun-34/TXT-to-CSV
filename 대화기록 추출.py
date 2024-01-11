@@ -8,7 +8,7 @@ for line in lines:
     print( line, end='' )   
     if a in line:
         main=line.split(' : ')[1]
-        with open("main.txt", "a", encoding='utf-8') as fs:
+        with open(a+"의 대화기록_main.txt", "a", encoding='utf-8') as fs:
             fs.write(main)
             fs.close()
 f.close()ㄴ
