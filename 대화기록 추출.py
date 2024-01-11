@@ -5,10 +5,11 @@ a='' #추출할 대상의 이름
 f = open( 'data_set/KakaoTalkChats.txt' , mode='r' ,encoding='utf-8')
 lines = f.readlines()
 for line in lines:
-    print( line, end='' )   
+    print( line, end='')   
     if a in line:
+        cu=cu+1
         main=line.split(' : ')[1]
         with open(a+"의 대화기록_main.txt", "a", encoding='utf-8') as fs:
             fs.write(main)
             fs.close()
-f.close()ㄴ
+f.close()
